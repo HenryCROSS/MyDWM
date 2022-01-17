@@ -17,10 +17,16 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
+
+static const char scheme_1_purple[]        = "#D9D7F1";
+static const char scheme_1_yellow[]        = "#FFFDDE";
+static const char scheme_1_green[]        = "#E7FBBE";
+static const char scheme_1_red[]        = "#FFCBCB";
+
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	[SchemeNorm] = { col_gray3, col_gray1, scheme_1_purple },
+	[SchemeSel]  = { col_gray4, col_cyan,  scheme_1_red  },
 };
 
 /* tagging */
@@ -100,6 +106,9 @@ static Key keys[] = {
 		TAGKEYS(                        XK_8,                      7)
 		TAGKEYS(                        XK_9,                      8)
 		{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	//rotate stack
+		{ MODKEY|ShiftMask,             XK_j,      rotatestack,    {.i = +1 } },
+		{ MODKEY|ShiftMask,             XK_k,      rotatestack,    {.i = -1 } },
 };
 
 /* button definitions */
