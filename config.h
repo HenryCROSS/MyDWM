@@ -10,8 +10,8 @@ static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10" };
-static const char dmenufont[]       = "monospace:size=10";
+static const char *fonts[]          = { "CaskaydiaCove Nerd Font:size=10" };
+static const char dmenufont[]       = "CaskaydiaCove:size=10";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -33,10 +33,15 @@ static const char scheme_3_grayLightBlue[]        = "#92A9BD";
 static const char scheme_3_grayDarkBlue[]        = "#7C99AC";
 static const char scheme_3_pink[]        = "#FFEFEF";
 
+static const char scheme_4_darkBlue[]        = "#000957";
+static const char scheme_4_blue[]        = "#344CB7";
+static const char scheme_4_grayBlue[]        = "#577BC1";
+static const char scheme_4_yellow[]        = "#EBE645";
+
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { scheme_2_darkPurple, scheme_3_grayDarkBlue, scheme_2_lightPurple },
-	[SchemeSel]  = { scheme_2_orange, scheme_3_grayLightBlue,  scheme_2_orange  },
+	[SchemeNorm] = { scheme_4_grayBlue, scheme_4_darkBlue, scheme_2_lightPurple },
+	[SchemeSel]  = { scheme_4_yellow, scheme_4_blue,  scheme_2_orange  },
 };
 
 /* tagging */
