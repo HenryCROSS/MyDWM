@@ -40,8 +40,10 @@ static const char scheme_4_yellow[]        = "#EBE645";
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { scheme_4_grayBlue, scheme_4_darkBlue, scheme_2_lightPurple },
-	[SchemeSel]  = { scheme_4_yellow, scheme_4_blue,  scheme_2_orange  },
+	[SchemeNorm] = { scheme_4_darkBlue, scheme_4_blue, scheme_2_lightPurple },
+	//[SchemeNorm] = { scheme_4_grayBlue, scheme_4_darkBlue, scheme_2_lightPurple },
+	[SchemeSel]  = { scheme_4_yellow, scheme_4_darkBlue,  scheme_2_orange  },
+	//[SchemeSel]  = { scheme_4_yellow, scheme_4_blue,  scheme_2_orange  },
 };
 
 /* tagging */
