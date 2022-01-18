@@ -6,7 +6,7 @@ static const int startwithgaps	     = 1;	 /* 1 means gaps are used by default */
 
 
 /* appearance */
-static const unsigned int borderpx  = 5;        /* border pixel of windows */
+static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -23,10 +23,20 @@ static const char scheme_1_yellow[]        = "#FFFDDE";
 static const char scheme_1_green[]        = "#E7FBBE";
 static const char scheme_1_red[]        = "#FFCBCB";
 
+static const char scheme_2_orange[]        = "#FFBD35";
+static const char scheme_2_green[]        = "#3FA796";
+static const char scheme_2_lightPurple[]        = "#8267BE";
+static const char scheme_2_darkPurple[]        = "#502064";
+
+static const char scheme_3_grayYellow[]        = "#D3DEDC";
+static const char scheme_3_grayLightBlue[]        = "#92A9BD";
+static const char scheme_3_grayDarkBlue[]        = "#7C99AC";
+static const char scheme_3_pink[]        = "#FFEFEF";
+
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, scheme_1_purple },
-	[SchemeSel]  = { col_gray4, col_cyan,  scheme_1_red  },
+	[SchemeNorm] = { scheme_2_darkPurple, scheme_3_grayDarkBlue, scheme_2_lightPurple },
+	[SchemeSel]  = { scheme_2_orange, scheme_3_grayLightBlue,  scheme_2_orange  },
 };
 
 /* tagging */
